@@ -1,0 +1,14 @@
+# Datasets
+data/
+yolo_dataset/
+
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model weights (optional – keep if you want to version them)
+*.pt
+
+# Environment files
+.env
