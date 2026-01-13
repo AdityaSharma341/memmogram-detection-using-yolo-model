@@ -51,7 +51,7 @@ python ddsm_yolo.py detect --weights runs/train/exp/weights/best.pt --source dat
 ## Workflow Diagram
 
 
-```mermaid
+```
 flowchart TD
   A[Raw DICOMs & CSVs] --> B[Conversion]
   B --> C[JPEG Images & Case Folders]
