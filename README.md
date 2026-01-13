@@ -49,7 +49,7 @@ python ddsm_yolo.py detect --weights runs/train/exp/weights/best.pt --source dat
 - The `yolo_dataset/` directory contains the final YOLO-style `images/` and `labels/` for `train/` and `val/` splits.
 
 ## Workflow Diagram
-Below is an at-a-glance workflow describing how data flows through this repository. You can render this using any Mermaid-capable renderer (e.g., VS Code Mermaid Preview, GitHub, or mermaid-cli).
+
 
 ```mermaid
 flowchart TD
@@ -65,7 +65,7 @@ flowchart TD
   style I fill:#bfe,stroke:#333,stroke-width:1px
 ```
 
-If you prefer a PNG/SVG diagram file inside the repo, export the Mermaid diagram to `docs/workflow.png` (or `docs/workflow.svg`). Example using `mmdc` (mermaid-cli):
+
 
 ```powershell
 npm install -g @mermaid-js/mermaid-cli
@@ -80,9 +80,8 @@ Add example images to `docs/` (recommended):
 - `docs/example-input.jpg` — sample input mammogram
 - `docs/example-output.jpg` — sample detection visualization (from `runs/detect/`)
 
-Insert images in this README by adding the files and using standard markdown image syntax, for example:
 
-![Example output](docs/example-output.jpg)
+
 
 If you want me to pull a representative image from the repo (for example, the first detection under `runs/detect/mammography_yolo/`) and add it to `docs/` and into this README, tell me and I will add it.
 
@@ -99,11 +98,4 @@ If you want me to pull a representative image from the repo (for example, the fi
 - If you don't have `requirements.txt`, create one listing key libs: `ultralytics`, `opencv-python`, `pandas`, `pydicom`, and `matplotlib`.
 - Use smaller `--weights` (`yolov8n.pt`) for quick experiments, larger for higher accuracy.
 - Keep a `docs/` folder for diagrams and example outputs; it keeps the README lean and visual.
-
-## Next Steps I can do for you
-- Add a rendered `docs/workflow.png` to the repo (I can export the Mermaid diagram).
-- Pull a sample input and output image from `data/jpeg/` or `runs/detect/` and embed it here.
-- Create `requirements.txt` and a tiny `Makefile`/PowerShell script for common tasks.
-
----
-If you'd like, I can now (1) export the Mermaid diagram to `docs/workflow.png` and (2) find a representative example detection image and add it to `docs/` and embed both in this README. Which would you like me to do? (Reply with `diagram`, `example-image`, `both`, or `none`.)
+----
